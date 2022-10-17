@@ -1,14 +1,13 @@
-package main.java;
+package main.os;
 
-import main.java.files.models.DataBlock;
-import main.java.files.models.MetaData;
-import main.java.files.services.MemoryServiceImpl;
-import main.java.files.services.FileServiceImpl;
-import main.java.files.services.IMemoryService;
-import main.java.files.services.IFileService;
+import main.os.files.models.DataBlock;
+import main.os.files.models.MetaData;
+import main.os.files.services.MemoryServiceImpl;
+import main.os.files.services.FileServiceImpl;
+import main.os.files.services.IMemoryService;
+import main.os.files.services.IFileService;
 
 import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
 
 public class FileStartOperation {
     private static final int MEMORY_SIZE = 100;
