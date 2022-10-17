@@ -1,9 +1,11 @@
-import files.models.DataBlock;
-import files.models.MetaData;
-import files.services.MemoryServiceImpl;
-import files.services.FileServiceImpl;
-import files.services.IMemoryService;
-import files.services.IFileService;
+package main.java;
+
+import main.java.files.models.DataBlock;
+import main.java.files.models.MetaData;
+import main.java.files.services.MemoryServiceImpl;
+import main.java.files.services.FileServiceImpl;
+import main.java.files.services.IMemoryService;
+import main.java.files.services.IFileService;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;

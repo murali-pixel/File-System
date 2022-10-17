@@ -1,12 +1,13 @@
-package files.services;
+package main.java.files.services;
 
-import files.models.DataBlock;
+import main.java.files.models.DataBlock;
+import main.java.files.models.DataBlock;
 
 import java.util.List;
 
-public class FileServiceImpl implements IFileService {
-    private IMemoryService memoryService;
-    public FileServiceImpl(IMemoryService memoryService) {
+public class FileServiceImpl implements main.java.files.services.IFileService {
+    private main.java.files.services.IMemoryService memoryService;
+    public FileServiceImpl(main.java.files.services.IMemoryService memoryService) {
         this.memoryService = memoryService;
     }
 
