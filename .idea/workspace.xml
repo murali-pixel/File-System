@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d585c4e0-d6f3-4b81-acf3-d92e1f76d4a1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/os/SystemDirectory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/os/SystemDirectory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/os/SystemFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/os/SystemFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/os/SystemMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/os/SystemMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/os/SystemNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/os/SystemNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/os/files/models/MetaData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/os/files/models/MetaData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +37,7 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "/Users/muralikrishnakancheti/IdeaProjects/File System"
   }
 }]]></component>
