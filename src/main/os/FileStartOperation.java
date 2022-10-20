@@ -42,11 +42,11 @@ public class FileStartOperation {
             switch (operation){
                 case 0:
                     //create
-                    createFile(sc, "hello.txt","OS FILE SYSTEM DEMO");
+                    createFile(sc, "yr1529_demo.txt","OS FILE SYSTEM DEMO");
                     break;
                 case 1:
                     //read
-                    readFile(sc, "hello.txt");
+                    readFile(sc, "yr1529_demo.txt");
                     break;
                 case 2:
                     //delete
