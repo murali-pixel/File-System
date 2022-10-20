@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MemoryServiceImpl implements IMemoryService {
-    int blockSize = 5;
+    int blockSize = 512;
     byte[] memory;
     int memorySize;
     List<DataBlock> dataBlocks;

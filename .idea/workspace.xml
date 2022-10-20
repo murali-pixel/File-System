@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d585c4e0-d6f3-4b81-acf3-d92e1f76d4a1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/os/Sector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/os/files/models/MetaData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/os/files/models/MetaData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/os/SystemNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/os/SystemNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/os/files/services/MemoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/os/files/services/MemoryServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,10 +40,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/Users/muralikrishnakancheti/IdeaProjects/File System"
+    "last_opened_file_path": "/Users/muralikrishnakancheti/IdeaProjects/File System",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Sector">
     <configuration name="FileStartOperation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.os.FileStartOperation" />
       <module name="File System" />
@@ -55,8 +58,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Sector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.os.Sector" />
+      <module name="File System" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.os.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Sector" />
         <item itemvalue="Application.FileStartOperation" />
       </list>
     </recent_temporary>
