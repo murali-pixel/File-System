@@ -1,6 +1,6 @@
-package main.os.files.services;
+package main.os.files.implementation;
 
-import main.os.files.models.DataBlock;
+import main.os.files.vars.DataBlock;
 
 import java.util.List;
 

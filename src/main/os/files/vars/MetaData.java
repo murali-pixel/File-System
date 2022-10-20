@@ -1,4 +1,4 @@
-package main.os.files.models;
+package main.os.files.vars;
 import lombok.Data;
 
 import java.util.List;

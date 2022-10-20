@@ -1,11 +1,11 @@
 package main.os;
 
-import main.os.files.models.DataBlock;
-import main.os.files.models.MetaData;
-import main.os.files.services.MemoryServiceImpl;
-import main.os.files.services.FileServiceImpl;
-import main.os.files.services.IMemoryService;
-import main.os.files.services.IFileService;
+import main.os.files.vars.DataBlock;
+import main.os.files.vars.MetaData;
+import main.os.files.implementation.Memory_Implementation;
+import main.os.files.implementation.File_Implementation;
+import main.os.files.implementation.IMemoryService;
+import main.os.files.implementation.IFileService;
 
 import java.util.*;
 
@@ -16,13 +16,13 @@ public class FileStartOperation {
 
     static {
         try {
-            memoryService = new MemoryServiceImpl(MEMORY_SIZE);
+            memoryService = new Memory_Implementation(MEMORY_SIZE);
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
-    private static IFileService fileService = new FileServiceImpl(memoryService);
+    private static IFileService fileService = new File_Implementation(memoryService);
 
 
     public static void main(String[] args) {
@@ -42,7 +42,7 @@ public class FileStartOperation {
             switch (operation){
                 case 0:
                     //create
-                    createFile(sc, "hello.txt","qwertyuiop");
+                    createFile(sc, "hello.txt","OS FILE SYSTEM DEMO");
                     break;
                 case 1:
                     //read

@@ -1,17 +1,17 @@
-package main.os.files.services;
+package main.os.files.implementation;
 
-import main.os.files.models.DataBlock;
+import main.os.files.vars.DataBlock;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MemoryServiceImpl implements IMemoryService {
+public class Memory_Implementation implements IMemoryService {
     int blockSize = 512;
     byte[] memory;
     int memorySize;
     List<DataBlock> dataBlocks;
 
-    public MemoryServiceImpl(int memorySize) throws Exception {
+    public Memory_Implementation(int memorySize) throws Exception {
         this.memory = new byte[memorySize];
         this.memorySize = memorySize;
         this.dataBlocks = new ArrayList<DataBlock>();
@@ -117,7 +117,6 @@ public class MemoryServiceImpl implements IMemoryService {
         } catch (Exception e){
             System.out.println("Exception occured "+e.getMessage());
             e.printStackTrace();
-            rollBack(index, oldFileSize, dataBlockList);
         }
 
         return dataBlockList;
@@ -139,8 +138,5 @@ public class MemoryServiceImpl implements IMemoryService {
         return remainingSize;
     }
 
-    private void rollBack(int i, int index, List<DataBlock> dataBlockList) {
-    //
-    }
 
 }

@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d585c4e0-d6f3-4b81-acf3-d92e1f76d4a1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/os/Sector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/os/SystemNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/os/SystemNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/os/files/services/MemoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/os/files/services/MemoryServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +41,7 @@
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Sector">
+  <component name="RunManager" selected="Application.FileStartOperation">
     <configuration name="FileStartOperation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.os.FileStartOperation" />
       <module name="File System" />
@@ -73,8 +70,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Sector" />
         <item itemvalue="Application.FileStartOperation" />
+        <item itemvalue="Application.Sector" />
       </list>
     </recent_temporary>
   </component>
