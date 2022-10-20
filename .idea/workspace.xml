@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d585c4e0-d6f3-4b81-acf3-d92e1f76d4a1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/os/FileStartOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/os/FileStartOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/os/files/models/DataBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/os/files/vars/DataBlock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/os/files/models/MetaData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/os/files/vars/MetaData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/os/files/services/FileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/os/files/implementation/File_Implementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/os/files/services/IFileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/os/files/implementation/IFileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/os/files/services/IMemoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/os/files/implementation/IMemoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/os/files/services/MemoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/os/files/implementation/Memory_Implementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/os/Sector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/os/Sector.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

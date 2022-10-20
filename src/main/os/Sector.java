@@ -1,13 +1,6 @@
 package main.os;
-
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 public class Sector {
-    private static Sector Back_Fixed;
+    private static int Back_Fixed;
     private static Sector  frwd;
     private static Sector free[];
     private static Sector filler;
@@ -35,9 +28,9 @@ public class Sector {
         sub_fields[0][1] = Integer.parseInt(Name);
         sub_fields[0][2] = link;
         sub_fields[0][3] = size;
-
+        // check if sector is U or D by using isinstance()
         for (int sect=0;sect<100;sect++) {
-            Back_Fixed = sectors[sect];
+            Back_Fixed = 0;
             frwd=sectors[sect+1];
             filler = null;
             for(int row=1;row<30;row++){
