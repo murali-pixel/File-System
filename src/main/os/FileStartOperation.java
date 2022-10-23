@@ -27,17 +27,17 @@ public class FileStartOperation {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        createFile(sc, "hello.txt","qwe");
-        readFile(sc, "hello.txt");
-        updateFile(sc, "hello.txt","12345678");
-        readFile(sc, "hello.txt");
+        createFile(sc, "osdemo1.txt","yr");
+        readFile(sc, "osdemo1.txt");
+        updateFile(sc, "osdemo1.txt","1529");
+        readFile(sc, "osdemo1.txt");
     }
 
     private static void fileOperation() {
         Scanner sc = new Scanner(System.in);
         while(true){
             System.out.println("Enter File Operation");
-            int operation = sc.nextInt(); //take input from the user
+            int operation = sc.nextInt();
 
             switch (operation){
                 case 0:
@@ -62,12 +62,6 @@ public class FileStartOperation {
     }
 
     private static void updateFile(Scanner sc, String fileNameToRead, String newFileData) {
-//        System.out.println("Enter File name");
-//        String fileNameToRead = sc.nextLine();
-//        System.out.println("Enter File data");
-//        String newFileData = sc.nextLine();
-        //Assuming all the file he/she is searching
-        //to handle multiple , display the file names, make user select one and then delete that
         for(MetaData metaData : metaDataList){
             if(!metaData.getFileName().equals(fileNameToRead)){
                 continue;
@@ -82,8 +76,6 @@ public class FileStartOperation {
     private static void deleteFile(Scanner sc) {
         System.out.println("Enter File name");
         String fileNameToRead = sc.nextLine();
-        //Assuming all the file he/she is searching
-        //to handle multiple , display the file names, make user select one and then delete that
         for(MetaData metaData : metaDataList){
             if(!metaData.getFileName().equals(fileNameToRead)){
                 continue;
@@ -93,10 +85,6 @@ public class FileStartOperation {
     }
 
     private static void readFile(Scanner sc, String fileNameToRead) {
-        //ystem.out.println("Enter File name");
-        //String fileNameToRead = sc.nextLine();
-        //Assuming all the file he/she is searching
-        //to handle multiple , display the file names, make user select one and then read that
         for(MetaData metaData : metaDataList){
             if(!metaData.getFileName().equals(fileNameToRead)){
                 continue;
