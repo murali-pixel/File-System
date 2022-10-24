@@ -1,9 +1,9 @@
 package main.os;
-public class Sector {
+public class DirectorySector {
     private static int Back_Fixed;
-    private static Sector  frwd;
-    private static Sector free[];
-    private static Sector filler;
+    private static DirectorySector frwd;
+    private static DirectorySector free[];
+    private static DirectorySector filler;
     static char type;
     static String Name;
     static int link;
@@ -11,10 +11,10 @@ public class Sector {
 
 
     public static void main(String args[]) {
-        Sector sectors[] = new Sector[100];
-        int free_count= sectors.length;
+        DirectorySector directorySectors[] = new DirectorySector[100];
+        int free_count= directorySectors.length;
         for (int i = 0; i < 100; i++) {
-            sectors[i] = new Sector();
+            directorySectors[i] = new DirectorySector();
         }
     /*Map<Object, ArrayList<Object>> multiMap = new HashMap<>();
 
@@ -31,7 +31,7 @@ public class Sector {
         // check if sector is U or D by using isinstance()
         for (int sect=0;sect<100;sect++) {
             Back_Fixed = 0;
-            frwd=sectors[sect+1];
+            frwd= directorySectors[sect+1];
             filler = null;
             for(int row=1;row<30;row++){
                 for(int col=0;col<4;col++){

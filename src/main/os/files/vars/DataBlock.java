@@ -8,4 +8,8 @@ import lombok.Data;
 public class DataBlock {
     private int start;
     private Boolean isOccupied;
+    //private int frwrd;
+    //private int back;
+    //private String data;
+
 }

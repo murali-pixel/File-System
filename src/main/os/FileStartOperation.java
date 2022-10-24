@@ -100,7 +100,7 @@ public class FileStartOperation {
 //        System.out.println("Enter File data");
 //        String fileData = sc.nextLine();
         List<DataBlock> dataBlocks = fileService.create(fileName, fileData);
-        MetaData metaData = new MetaData(UUID.randomUUID(), fileName, dataBlocks, fileData.getBytes().length);
+        MetaData metaData = new MetaData(fileName, dataBlocks, fileData.getBytes().length);
         metaDataList.add(metaData);
     }
 }

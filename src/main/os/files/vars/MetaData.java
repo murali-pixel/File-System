@@ -9,7 +9,6 @@ import lombok.AllArgsConstructor;
 @Data
 @AllArgsConstructor
 public class MetaData {
-    private UUID uuid;
     private String fileName;
     private List<DataBlock> dataBlockList;
     private int size;

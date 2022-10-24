@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d585c4e0-d6f3-4b81-acf3-d92e1f76d4a1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/os/Sector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/os/DirectorySector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/os/files/vars/DataBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/os/files/vars/DataBlock.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +44,8 @@
   }
 }]]></component>
   <component name="RunManager" selected="Application.FileStartOperation">
-    <configuration name="FileStartOperation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.os.FileStartOperation" />
+    <configuration name="DirectorySector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.os.DirectorySector" />
       <module name="File System" />
       <extension name="coverage">
         <pattern>
@@ -55,8 +57,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Sector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.os.Sector" />
+    <configuration name="FileStartOperation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.os.FileStartOperation" />
       <module name="File System" />
       <extension name="coverage">
         <pattern>
@@ -71,7 +73,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.FileStartOperation" />
-        <item itemvalue="Application.Sector" />
+        <item itemvalue="Application.DirectorySector" />
       </list>
     </recent_temporary>
   </component>
