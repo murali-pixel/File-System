@@ -5,13 +5,13 @@ import main.os.files.vars.DataBlock;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Memory_Implementation implements IMemoryService {
+public class DataBlock_Implementation implements DataBlockInterface {
     int blockSize = 512;
     byte[] memory;
-    int memorySize;
+    int memorySize=51200;
     List<DataBlock> dataBlocks;
 
-    public Memory_Implementation(int memorySize) throws Exception {
+    public DataBlock_Implementation(int memorySize) throws Exception {
         this.memory = new byte[memorySize];
         this.memorySize = memorySize;
         this.dataBlocks = new ArrayList<DataBlock>();
@@ -20,9 +20,9 @@ public class Memory_Implementation implements IMemoryService {
 
     public void createDataBlock() throws Exception {
         if(memorySize == 0){
-            throw new RuntimeException("Memory Size given is 0");
+            throw new RuntimeException("Memory Size is 0");
         }
-        int num = memorySize/blockSize;
+        int num = 100;
         for(int i = 0; i < num; i++){
             DataBlock dataBlock = new DataBlock(blockSize * i,false);
             dataBlocks.add(dataBlock);
@@ -52,18 +52,18 @@ public class Memory_Implementation implements IMemoryService {
         return dataBlockList;
     }
 
-    private int getDataBlockToWrite(List<DataBlock> dataBlockList, int length) {
+    private int getDataBlockToWrite(List<DataBlock> dataBlockList, int available_length) {
         for (DataBlock dataBlock : dataBlocks) {
-            if (length <= 0) {
+            if (available_length <= 0) {
                 break;
             }
             if (dataBlock.getIsOccupied()) {
                 continue;
             }
             dataBlockList.add(dataBlock);
-            length = length - blockSize;
+            available_length = available_length - blockSize;
         }
-        return length;
+        return available_length;
     }
 
     public String read(List<DataBlock> dataBlocks, int size) {

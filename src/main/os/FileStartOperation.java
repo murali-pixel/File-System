@@ -2,27 +2,27 @@ package main.os;
 
 import main.os.files.vars.DataBlock;
 import main.os.files.vars.MetaData;
-import main.os.files.implementation.Memory_Implementation;
+import main.os.files.implementation.DataBlock_Implementation;
 import main.os.files.implementation.File_Implementation;
-import main.os.files.implementation.IMemoryService;
-import main.os.files.implementation.IFileService;
+import main.os.files.implementation.DataBlockInterface;
+import main.os.files.implementation.FileInterface;
 
 import java.util.*;
 
 public class FileStartOperation {
     private static final int MEMORY_SIZE = 100;
-    private static IMemoryService memoryService;
+    private static DataBlockInterface memoryService;
     private static List<MetaData> metaDataList = Collections.synchronizedList(new ArrayList<MetaData>());
 
     static {
         try {
-            memoryService = new Memory_Implementation(MEMORY_SIZE);
+            memoryService = new DataBlock_Implementation(MEMORY_SIZE);
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
-    private static IFileService fileService = new File_Implementation(memoryService);
+    private static FileInterface fileService = new File_Implementation(memoryService);
 
 
     public static void main(String[] args) {
