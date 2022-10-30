@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d585c4e0-d6f3-4b81-acf3-d92e1f76d4a1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/os/FileStartOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/os/FileStartOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/os/files/implementation/File_Implementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/os/files/implementation/File_Implementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/os/files/implementation/IFileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/os/files/implementation/FileInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/os/files/implementation/IMemoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/os/files/implementation/DataBlockInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/os/files/implementation/Memory_Implementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/os/files/implementation/DataBlock_Implementation.java" afterDir="false" />
-    </list>
+    <list default="true" id="d585c4e0-d6f3-4b81-acf3-d92e1f76d4a1" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,19 +26,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/Users/muralikrishnakancheti/IdeaProjects/File System",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/muralikrishnakancheti/IdeaProjects/File System&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.FileStartOperation">
     <configuration name="DirectorySector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.os.DirectorySector" />
@@ -101,5 +94,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/File_System$FileStartOperation.ic" NAME="FileStartOperation Coverage Results" MODIFIED="1666914722592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>main.os.*</FILTER>
+    </SUITE>
   </component>
 </project>

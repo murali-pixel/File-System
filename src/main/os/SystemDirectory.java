@@ -14,7 +14,7 @@ public class SystemDirectory extends SystemNode {
     }
 
     public void add(Node node) {
-        //node.setRoot(this); undo later
+        //node.setRoot(this);
         nodes.add(node);
     }
 
@@ -26,7 +26,7 @@ public class SystemDirectory extends SystemNode {
     public long getLength() {
         long length = 0;
         for (Node node : nodes) {
-            //length += node.getLength(); undo later
+            //length += node.getLength();
         }
         return length;
     }
@@ -34,25 +34,25 @@ public class SystemDirectory extends SystemNode {
     public void printTree() {
         int indent = 0;
         StringBuilder sb = new StringBuilder();
-       // printDirectoryTree(this, indent, sb); undo later
+       //printDirectoryTree(this, indent, sb);
         System.out.println(sb.toString());
     }
 
     private void printDirectoryTree(Node node, int indent, StringBuilder sb) {
         sb.append(getIndentString(indent));
         sb.append("+--");
-        //sb.append(node.getName());  change it later
+       // sb.append(node.getName());
         sb.append("/");
         sb.append("\n");
 
         // undo it later
-        /*if (node.isDirectory()) {
+       // if (node.isDirectory()) {
             SystemDirectory directory = (SystemDirectory) node;
             for (Node file : directory.getNodes()) {
                 printDirectoryTree(file, indent + 1, sb);
             }
-        }*/
-    }
+        }
+
 
     private static String getIndentString(int indent) {
         StringBuilder sb = new StringBuilder();

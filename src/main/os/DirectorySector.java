@@ -23,19 +23,18 @@ public class DirectorySector {
 
 
         int sub_fields[][] = new int[31][4];
-
-        sub_fields[0][0] = type;
-        sub_fields[0][1] = Integer.parseInt(Name);
-        sub_fields[0][2] = link;
-        sub_fields[0][3] = size;
         // check if sector is U or D by using isinstance()
         for (int sect=0;sect<100;sect++) {
             Back_Fixed = 0;
             frwd= directorySectors[sect+1];
             filler = null;
-            for(int row=1;row<30;row++){
+            for(int row=0;row<30;row++){
                 for(int col=0;col<4;col++){
-                    sub_fields[row][col]= Integer.parseInt("DATA TO BE FILLED FROM FILE INSIDE DIRECTORY");
+                    sub_fields[row][col]= type;
+                    sub_fields[row][col+1]= Integer.parseInt(Name);
+                    sub_fields[row][col+2]= link;
+                    sub_fields[row][col+3]= size;
+
                 }
 
             }

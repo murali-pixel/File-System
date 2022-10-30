@@ -27,34 +27,35 @@ public class FileStartOperation {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        createFile(sc, "osdemo1.txt","yr");
+       /* createFile(sc, "osdemo1.txt","yr");
         readFile(sc, "osdemo1.txt");
         updateFile(sc, "osdemo1.txt","1529");
-        readFile(sc, "osdemo1.txt");
+        readFile(sc, "osdemo1.txt");*/
+        fileOperation();
     }
 
     private static void fileOperation() {
         Scanner sc = new Scanner(System.in);
         while(true){
             System.out.println("Enter File Operation");
-            int operation = sc.nextInt();
+            String operation = sc.nextLine();
 
             switch (operation){
-                case 0:
+                case "CREATE":
                     //create
                     createFile(sc, "yr1529_demo.txt","OS FILE SYSTEM DEMO");
                     break;
-                case 1:
+                case "READ":
                     //read
                     readFile(sc, "yr1529_demo.txt");
                     break;
-                case 2:
+                case "DELETE":
                     //delete
                     deleteFile(sc);
                     break;
-                case 3:
+                case "UPDATE":
                     //update
-                    //updateFile(sc);
+                    updateFile(sc,"yr1529_demo.txt","Updating new file");
                     break;
 
             }
@@ -74,7 +75,7 @@ public class FileStartOperation {
     }
 
     private static void deleteFile(Scanner sc) {
-        System.out.println("Enter File name");
+        //System.out.println("Enter File name");
         String fileNameToRead = sc.nextLine();
         for(MetaData metaData : metaDataList){
             if(!metaData.getFileName().equals(fileNameToRead)){
@@ -90,7 +91,7 @@ public class FileStartOperation {
                 continue;
             }
             String fileData = fileService.read(metaData.getDataBlockList(), metaData.getSize());
-            System.out.println("--"+fileData);
+            System.out.println("DEMO DATA IS-------- " + fileData);
         }
     }
 
@@ -102,5 +103,6 @@ public class FileStartOperation {
         List<DataBlock> dataBlocks = fileService.create(fileName, fileData);
         MetaData metaData = new MetaData(fileName, dataBlocks, fileData.getBytes().length);
         metaDataList.add(metaData);
+        System.out.println("File created succesfully");
     }
 }
